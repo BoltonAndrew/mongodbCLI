@@ -37,7 +37,7 @@ exports.deleteMovie = async (collection, filterObj) => {
   try {
     const deleteCheck = await collection.deleteOne(filterObj);
     if (deleteCheck.deletedCount > 0) {
-      console.log("Successfully updated");
+      console.log("Successfully deleted");
     } else {
       console.log("No movie found");
     }
